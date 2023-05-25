@@ -1,41 +1,9 @@
-# Wecode Git Test
+ # git command  개념 정리
 
-해당 레포지토리는 `git test`를 위한 레포지토리입니다.
-
-시험 시간은 총 1시간이며, `git`에 익숙해질 때까지 연습을 하셔도 좋습니다.
-
-교육생분들은 아래 안내에 따라 단계별 과제를 진행해주시기 바랍니다.
-
-<br>
-<br>
-
-## 📍 초기 세팅
-
-1. 터미널을 켜서 desktop 디렉토리로 이동합니다.
-   ```shell
-        $ cd desktop
-    ```
-
-2. `wecode-git-test` 레포지토리를 클론해주세요.
-   
-    ```shell
-        $ git clone https://github.com/wecode-bootcamp-korea/wecode-git-test.git
-    ```
-3. 터미널에서 클론 받은 레포지토리의 디렉토리 경로로 이동 후 remote 연결을 해제해주세요.
-   
-    ```shell
-        $ git remote remove origin
-    ```
-4. 본인 github 페이지로 이동하여 repository를 생성해주세요. repository 이름은 `git-test`로 만들어주세요.
-
-
-5. 이후 아래 이미지처럼 개인 Github에 생성한 레포지토리의 주소를 복사합니다.
-   - 예시 이미지
-   ![스크린샷 2023-03-21 오전 11 13 55](https://user-images.githubusercontent.com/78401083/226503628-aaf7a9fc-139c-470f-ba4a-3250a9b144e3.png)
-
-6. 다시 clone 받은 프로젝트로 돌아와서 방금 생성한 개인 repo와 연결해줍니다.
-   
-    ```shell
-        $ git remote add origin https://github.com/[본인의 github username]/git-test.git
-    ```
-7. 이후 노션 안내에 따라 Test를 진행해주세요.
+- `git init`: git한테 이제부터 추적하라고 초기화 시켜주는 명령어
+- `git remote add origin <remote repository url>`: git과 local(my computer)를 연결 시켜주고 해당 레파지토리를 앞으로 주소대신 Origin이라 부르겠다
+- `git add <file name>`: 장바구니에 담듯 commit 전 중간 저장하는 명령어
+- `git commit`: 장바구니에 담긴것들을 계산하는것과 같음
+- `git push origin <branch name>`: origin(해당 레파지토리)에 내 브랜치를 올리겠다
+- `git pull origin <branch name>`: origin에 있는 해당 브렌치를(보통 main) 내 로컬에 main으로 받아오겠다
+- `git merge <branch name>`: Local main(아니면 다른 내 로컬 브랜치)에 있는것을 내가 현재 있는 local branch와 합치겠다
